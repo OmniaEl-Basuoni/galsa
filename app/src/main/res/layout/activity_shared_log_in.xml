@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.omnia.ourproject.SharedActivity.LogInActivity">
+
+    <ImageView
+        android:id="@+id/IV_logo"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_logo2"
+        android:layout_weight=".7"/>
+
+
+    <LinearLayout
+        android:layout_weight=".9"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_weight="1"
+        android:id="@+id/TIL_Email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <EditText
+            android:text="mennaemad250@gmail.com"
+            android:id="@+id/ET_Email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TIL_Password"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <in.anshul.libray.PasswordEditText
+            android:text="123456"
+            android:id="@+id/ET_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:id="@+id/BT_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_login"
+        android:background="@drawable/lightsolid_withoutstroke_15dp"
+android:layout_weight=".2"
+
+        />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/TV_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Forget Password"
+        android:textSize="14dp"
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="15dp"
+        android:layout_weight="3"
+        />
+
+
+
+
+
+</LinearLayout>
+
+</LinearLayout>

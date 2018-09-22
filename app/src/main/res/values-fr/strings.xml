@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Galsa</string>
+    <string name="app_login">LogIn</string>
+    <string name="app_register">Register</string>
+    <string name="app_by">By</string>
+    <string name="add_feedback">Add Feddback</string>
+    <string name="app_required">Required Information</string>
+    <string name="app_national">National ID</string>
+    <string name="app_cv">Your CV</string>
+    <string name="app_photo">Personal Photo</string>
+    <string name="app_karneh">Karneh l nqaba</string>
+    <string name="facebook_app_id">386409111792220</string>
+    <string name="fb_login_protocol_scheme">fb386409111792220</string>
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+
+        android:background="@drawable/backgrounwhite_10dp"
+        android:padding="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <android.support.v7.widget.CardView
+
+            card_view:cardCornerRadius="10dp"
+            android:id="@+id/CardviewTherapy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:id="@+id/TV_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor Name "
+                android:inputType="textCapWords"
+
+                android:layout_below="@+id/IV"/>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/group_design"
+        android:layout_gravity="center_vertical"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:id="@+id/TV_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20:00"
+            />
+
+        <TextView
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:id="@+id/TV_DDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+
+            android:text="Fri" />
+
+    </LinearLayout>
+
+
+    <!--
+                   <LinearLayout
+                       android:paddingBottom="5dp"
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+                   </LinearLayout>
+    -->
+
+
+
+
+
+
+
+</FrameLayout>

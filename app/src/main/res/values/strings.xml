@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Galsa</string>
+    <string name="facebook_app_id">386409111792220</string>
+    <string name="fb_login_protocol_scheme">fb386409111792220</string>
+    <string name="app_login">LogIn</string>
+    <string name="app_edite">Edit Profile</string>
+    <string name="app_register">Register</string>
+    <string name="app_by">By</string>
+    <string name="add_feedback">Add Feddback</string>
+    <string name="app_required">Required Information</string>
+    <string name="app_national">National ID</string>
+    <string name="app_cv">Your CV</string>
+    <string name="app_photo">Personal Photo</string>
+    <string name="app_karneh">Karneh l nqaba</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="app_finish">Finish</string>
+    <string name="today">TODAY</string>
+    <string name="galsa_name">Galsa Name</string>
+    <string name="notes">Notes</string>
+    <string name="medicine">Medicine</string>
+    <string name="monday">Monday</string>
+    <string name="num">24</string>
+    <string name="feb">Feb</string>
+    <string name="gender">Gender</string>
+    <string name="set">Set</string>
+    <string name="my_doctor">My Doctors</string>
+    <string name="rated_doctor">Top Doctors</string>
+    <string name="fees">fees : </string>
+
+    <string name="confirm">Confirm</string>
+    <string name="price1">Price for 60 m:</string>
+    <string name="price2">Price for 30 m:</string>
+    <string name="Today">Today\'s patients :</string>
+
+    <string name="personal_info">Personal Information</string>
+    <string name="career_info">Career Information</string>
+    <string name="requests">Requests</string>
+    <string name="doctor">Doctor</string>
+    <string name="patient">Patient</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="retry">RetryPassword</string>
+    <string name="national">National ID</string>
+
+    <string name="male">Male</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="female">Female</string>
+    <string name="enter">Enter Your Phone Number</string>
+    <string name="stop_service">Stop service</string>
+
+    <string name="contact">Contact</string>
+    <string name="education_experince">Education and Experence</string>
+    <string name="other_info">Other Information</string>
+    <string name="upload_your_ph">Upload Your Profile Photo</string>
+    <string name="university">University</string>
+    <string name="the_price_for_30m">The price for 30m</string>
+    <string name="the_price_for_60m">The price for 60m</string>
+
+    <string name="day_name">Day Name</string>
+    <string name="time">Time</string>
+
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+
+    <string name="ringing">Ringing</string>
+    <string name="time_zero">00:00</string>
+    <string name="incoming_call">Incoming call</string>
+
+    <string name="month">Month</string>
+    <string name="see_more">See more</string>
+    <string name="add">Add</string>
+    <string name="join">Join</string>
+    <string name="patient_age">Patient Age</string>
+    <string name="patient_status">Patient Status</string>
+    <string name="call">Call</string>
+    <string name="therapy">Group Support</string>
+    <string name="today_agenda">Today Agenda</string>
+    <string name="name">Name</string>
+    <string name="country">Country</string>
+    <string name="phone">Phone</string>
+    <string name="nationality">Nationality</string>
+    <string name="email">E-Mail</string>
+    <string name="universty">University</string>
+    <string name="category">Category</string>
+    <string name="certification">Certification</string>
+
+    <string name="next">NEXT</string>
+
+    <string name="date">March 2014</string>
+    <string name="delete">Delete</string>
+    <string name="cancle">Cancle</string>
+
+
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="patient_name">Patient Name:</string>
+
+    <string name="type_a_message">Type a message</string>
+    <string name="cancel">Cancel</string>
+    <string-array name="category_item">
+        <item>Child disorders</item>
+        <item>Mood disorders</item>
+        <item>Personal Disorders</item>
+        <item>Addiction</item>
+        <item>Eating disorders</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Most Recently</string>
+
+</resources>

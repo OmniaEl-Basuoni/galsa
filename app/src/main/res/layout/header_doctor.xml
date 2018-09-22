@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:background="@color/color_light"
+    android:padding="20dp"
+    android:gravity="bottom"
+
+    >
+    <TextView
+        android:id="@+id/Name_Slide"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Omnia Elbasuoni"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+    
+    <TextView
+        android:id="@+id/Email_Slide"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OmniaElbasuoni@gmail.com"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <RatingBar
+        android:layout_marginTop="5dp"
+        android:stepSize="0.1"
+        android:id="@+id/RB_rate"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="2.3"
+        style="?android:attr/ratingBarStyleSmall"
+        />
+
+</LinearLayout>

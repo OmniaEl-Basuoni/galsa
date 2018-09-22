@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@drawable/backgrounwhite_10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+        <TextView
+            android:layout_marginStart="3dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:text="hrgehruighfrughreuhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hospitalName"
+            android:textSize="16sp"
+            android:inputType="text" />
+
+
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/hospitalName"
+            android:textAlignment="center"
+            android:text="jhiojhitjhiojtjtijitjhjtihjtjitjhitjit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hospitalAddress"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_below="@+id/hospitalAddress"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/hospitalPhone"
+            android:background="@drawable/ic_call_answer"
+            />
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

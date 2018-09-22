@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="cycle" >65dp</dimen>
+    <dimen name="test" >80dp</dimen>
+    <dimen name="mini" >30dp</dimen>
+    <dimen name="margin" >60dp</dimen>
+
+</resources>

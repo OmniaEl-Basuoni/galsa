@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.omnia.ourproject.Doctor.Activities.DoctorProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.omnia.ourproject.DrawerLayout">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_background"
+                android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <FrameLayout
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/Photo"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/photo_border"
+                                android:clickable="true"
+                                android:contextClickable="true"
+                                android:src="@drawable/ic_doctor" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:contextClickable="true"
+                                android:layout_gravity="bottom|right"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:clickable="true"
+                                android:background="@drawable/whitsolid_lightstroke_45dp"
+                                android:src="@drawable/ic_cam"
+                                android:id="@+id/IV_Click" />
+
+                        </FrameLayout>
+
+
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <RatingBar
+                                        android:id="@+id/RB_rate"
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:numStars="5"
+                                        android:rating="4"
+                                        android:theme="@style/RatingBar"
+                                        android:stepSize="0.1" />
+
+
+                                    <android.support.design.widget.FloatingActionButton
+                                        android:id="@+id/edit1"
+                                        android:layout_width="@dimen/mini"
+                                        android:layout_height="@dimen/mini"
+                                        android:layout_gravity="end"
+                                        android:src="@drawable/ic_edit"
+                                        app:backgroundTint="@color/colorPrimaryDark"
+                                        app:fabSize="mini" />
+                                </FrameLayout>
+
+                                <TextView
+                                    android:id="@+id/name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Menna Emad"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/category"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Category....."
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/country"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Alexandria"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16dp" />
+
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+
+
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/contact"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="16dp"
+                                        />
+
+
+                                <TextView
+                                    android:id="@+id/mail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="mail"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/phone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="phone"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/education_experince"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                    <android.support.design.widget.FloatingActionButton
+                                        android:id="@+id/edit3"
+                                        android:layout_width="@dimen/mini"
+                                        android:layout_height="@dimen/mini"
+                                        android:layout_gravity="end"
+                                        android:src="@drawable/ic_edit"
+                                        app:backgroundTint="@color/colorPrimaryDark"
+                                        app:fabSize="mini" />
+
+                                </FrameLayout>
+
+                                <TextView
+                                    android:id="@+id/university"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="SW engineering at facualty of computer and information"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/certification"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="SW engineering at facualty of computer and information"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/other_info"
+                                        android:layout_marginTop="5dp"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                    <android.support.design.widget.FloatingActionButton
+                                        android:id="@+id/edit4"
+                                        android:layout_width="@dimen/mini"
+                                        android:layout_height="@dimen/mini"
+                                        android:layout_gravity="end"
+                                        android:src="@drawable/ic_edit"
+                                        app:backgroundTint="@color/colorPrimaryDark"
+                                        app:fabSize="mini" />
+
+                                </FrameLayout>
+
+
+                                <TextView
+                                    android:id="@+id/price1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Price for 30 m : "
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/price2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="20dp"
+                                    android:text="Price for 60 m : "
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/fr"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/colorPrimary"
+                app:headerLayout="@layout/header_doctor"
+                app:itemIconTint="@color/colorPrimaryDark"
+                app:itemTextColor="@color/colorPrimaryDark"
+                app:menu="@menu/drawermenu_doctor"
+
+                >
+
+            </android.support.design.widget.NavigationView>
+
+        </android.support.v4.widget.DrawerLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

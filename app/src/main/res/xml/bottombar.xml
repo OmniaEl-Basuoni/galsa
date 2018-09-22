@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tab>
+    <tab
+        id="@+id/home"
+        icon="@drawable/ic_users_group"
+        activeColor="@color/color_light"
+        />
+
+    <tab
+        id="@+id/calender"
+        icon="@drawable/ic_calendar_tool_for_time_organization"
+        activeColor="@color/color_light"
+        />
+
+    <tab
+        id="@+id/complains"
+        icon="@drawable/ic_checkbox_pen_outline"
+        activeColor="@color/color_light"
+        />
+
+</Tab>

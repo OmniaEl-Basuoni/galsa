@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "66690317769",
+    "firebase_url": "https://jalsa-e9ec7.firebaseio.com",
+    "project_id": "jalsa-e9ec7",
+    "storage_bucket": "jalsa-e9ec7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66690317769:android:4bda0908864aa0c2",
+        "android_client_info": {
+          "package_name": "com.example.omnia.ourproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66690317769-mps5a5ut4dpescap9srgg858p8ac9kmh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.omnia.ourproject",
+            "certificate_hash": "1701b356f7b8ffc37590e708f3be3514291f9a61"
+          }
+        },
+        {
+          "client_id": "66690317769-2650es0sqv97gdnsl7ot2aq58kbua334.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "66690317769-jo24948f2m4jbfpmcikv3fe4bdfgaq6l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "66690317769-jo24948f2m4jbfpmcikv3fe4bdfgaq6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_oAPOLJSOM-7g6DCX5dy-9MiXDrulLm8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "66690317769-2650es0sqv97gdnsl7ot2aq58kbua334.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

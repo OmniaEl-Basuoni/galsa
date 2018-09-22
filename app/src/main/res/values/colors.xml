@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#055466</color>
+    <color name="colorAccent">#FF4</color>
+    <color name="color_background">#f8f7f7</color>
+    <color name="color_light">#1cbdd4</color>
+    <color name="colorRed">#cd2626</color>
+    <color name="colorgoogle">#dd4b39</color>
+    <color name="colorfacebook">#3b5998</color>
+    <color name="colorChat">#fafafe</color>
+    <color name="colordot">#000000</color>
+    <color name="colorgreen">#03C03C</color>
+
+
+    <color name="colorFeed">#F9EBEA</color>
+    <color name="colorFeed1">#EBDEF0</color>
+    <color name="colorFeed2">#D4E6F1</color>
+    <color name="colorFeed3">#AED6F1</color>
+    <color name="colorFeed4">#c8f7c5</color>
+    <color name="colorFeed5">#A3E4D7</color>
+    <color name="colorFeed6">#FCF3CF</color>
+    <color name="colorFeed7">#FAD7A0</color>
+</resources>

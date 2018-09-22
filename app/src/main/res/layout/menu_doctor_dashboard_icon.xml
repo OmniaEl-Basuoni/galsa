@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+
+    android:id="@+id/layout">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/cycle"
+                android:layout_height="@dimen/cycle"
+                android:maxHeight="@dimen/cycle"
+                android:maxWidth="@dimen/cycle"
+                android:src="@drawable/ic_menu"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logo2"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:gravity="end|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/cycle"
+                android:layout_height="@dimen/cycle"
+                android:maxHeight="?attr/actionBarSize"
+                android:maxWidth="?attr/actionBarSize"
+                android:src="@drawable/ic_search"
+                />
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

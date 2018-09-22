@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/cycle"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+
+    android:id="@+id/layout">
+
+
+    <com.github.pavlospt.roundedletterview.RoundedLetterView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/rlv_name_view"
+        android:layout_width="@dimen/cycle"
+        android:layout_height="@dimen/cycle"
+        android:maxHeight="@dimen/cycle"
+        android:maxWidth="@dimen/cycle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:rlv_titleSize="20dp"
+        app:rlv_titleColor="#fff"
+        app:rlv_backgroundColorValue="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:padding="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/rlv_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:text="mohammed oid"/>
+
+</RelativeLayout>

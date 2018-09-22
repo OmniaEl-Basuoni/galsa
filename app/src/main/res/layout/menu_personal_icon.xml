@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/cycle"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/layout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/cycle"
+        android:layout_height="@dimen/cycle"
+        android:maxHeight="@dimen/cycle"
+        android:maxWidth="@dimen/cycle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+         />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/imageView4"
+        android:padding="2dp"
+        android:text="mohammed oid"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+</RelativeLayout>

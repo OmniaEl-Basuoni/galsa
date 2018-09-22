@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/call"
+        android:title="call"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_call"></item>
+
+
+    <item android:id="@+id/videocall"
+        android:title="video"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_videochatwhite"></item>
+
+    <item android:id="@+id/about"
+        android:title="About"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_about"></item>
+
+
+</menu>

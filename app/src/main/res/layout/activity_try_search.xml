@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient.SearchPackage.TrySearchActivity">
+    <RelativeLayout
+        android:background="@color/color_background"
+        android:layout_width="match_parent"
+        android:id="@+id/k"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/Order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/backgroundsolid_blackstroke_15dp"
+                android:padding="20dp">
+
+
+
+                <Space
+                    android:id="@+id/sds"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+
+                android:inputType="textCapWords"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Order By"
+                android:textSize="20sp"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="30dp"
+                android:background="@color/color_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                />
+
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/Order"
+            android:paddingBottom="10dp"
+            android:id="@+id/recyclerview_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/bottomsheet" />
+
+</RelativeLayout>

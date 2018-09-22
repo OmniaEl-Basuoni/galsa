@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.omnia.ourproject.Doctor.Activities.DoctorHomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.widget.DrawerLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.omnia.ourproject.DrawerLayout">
+
+
+            <ScrollView
+                android:background="@color/color_background"
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/backgroundsolid_blackstroke_15dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="20dp">
+
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/color_background">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/RL"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:background="@color/color_background"
+                                        android:gravity="center|center_vertical"
+                                        android:orientation="horizontal">
+
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            android:src="@drawable/ic_calendar" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/TV_DName"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Day Name"
+                                                android:textAlignment="textStart"
+                                                android:textColor="@color/colorPrimaryDark"
+                                                android:textSize="20dp" />
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_horizontal"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_marginEnd="2dp"
+                                                    android:id="@+id/TV_Day"
+                                                    android:textStyle="bold"
+                                                    android:textColor="@color/colorPrimaryDark"
+                                                    android:textSize="16sp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/time"/>
+
+                                                <TextView
+                                                    android:id="@+id/TV_Month"
+                                                    android:gravity="bottom|start"
+                                                    android:textColor="@color/colorPrimaryDark"
+                                                    android:textSize="12dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Feb"/>
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <Space
+                                        android:id="@+id/ss"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_below="@+id/RL" />
+
+
+                                    <FrameLayout
+                                        android:layout_below="@+id/ss"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_marginStart="30dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_height="match_parent"
+                                            android:layout_width="2dp" />
+                                        <android.support.v7.widget.RecyclerView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/RV_Calender"
+                                            android:layout_marginEnd="15dp"
+                                            android:layout_marginStart="15dp">
+                                        </android.support.v7.widget.RecyclerView>
+
+                                        <TextView
+                                            android:textColor="@color/colorPrimaryDark"
+                                            android:background="@color/color_background"
+                                            android:layout_gravity="bottom"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp" />
+
+
+                                    </FrameLayout>
+
+                                </RelativeLayout>
+
+
+                            </FrameLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:textAlignment="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@color/color_background"
+                            android:layout_marginStart="30dp"
+                            android:layout_gravity="start|top"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/today_agenda"
+                            android:textSize="20sp"
+                            android:inputType="textCapWords"/>
+
+                    </FrameLayout>
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+            <android.support.design.widget.NavigationView
+                app:headerLayout="@layout/header_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/fr"
+                android:background="@color/colorPrimary"
+                app:itemTextColor="@color/colorPrimaryDark"
+                app:itemIconTint="@color/colorPrimaryDark"
+                app:menu="@menu/drawermenu_doctor"
+                android:layout_gravity="start"
+
+                >
+
+            </android.support.design.widget.NavigationView>
+
+        </android.support.v4.widget.DrawerLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

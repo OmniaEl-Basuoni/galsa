@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/calender" android:title="Calender"
+        android:icon="@drawable/ic_calendar"/>
+    <item android:id="@+id/doctor" android:title="Choose Your Doctor"
+        android:icon="@drawable/ic_rating"/>
+    <item android:id="@+id/group" android:title="Join To Therapy"
+        android:icon="@drawable/ic_networking"/>
+    <item android:id="@+id/feedback" android:title="Feedback"
+        android:icon="@drawable/ic_feedback"/>
+    <item android:id="@+id/help" android:title="Help"
+        android:icon="@drawable/ic_help"/>
+    <item android:id="@+id/logout" android:title="Logout"
+        android:icon="@drawable/ic_logout"/>
+</menu>

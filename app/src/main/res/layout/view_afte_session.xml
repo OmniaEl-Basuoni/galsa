@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:layout_marginBottom="5dp"
+       android:id="@+id/L"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <EditText
+           android:textColor="@color/colorPrimaryDark"
+           android:hint="Add Medicine"
+           android:layout_marginEnd="10dp"
+           android:layout_weight="1"
+           android:id="@+id/text"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+       <Button
+           android:textColor="@color/colorPrimary"
+           android:background="@drawable/lightsolid_withoutstroke_15dp"
+           android:text="@string/add"
+           android:layout_weight="4"
+           android:id="@+id/button_Add"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_toEndOf="@+id/text"/>
+   </LinearLayout>
+
+    <co.lujun.androidtagview.TagContainerLayout
+        android:minHeight="50dp"
+        android:layout_below="@+id/L"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </co.lujun.androidtagview.TagContainerLayout>
+
+    <EditText
+        android:minHeight="100dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="textStart"
+        android:background="@color/colorPrimary"
+        android:hint="Write Notes"
+        android:layout_below="@+id/content"
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:text="@string/set"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/lightsolid_withoutstroke_15dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/notes"
+        android:id="@+id/button_Set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

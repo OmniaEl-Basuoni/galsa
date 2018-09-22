@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@color/color_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <TextView
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:id="@+id/d"
+                    android:text="@string/month"
+                    android:textSize="24dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAlignment="viewStart"/>
+
+
+
+            </LinearLayout>
+
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                android:id="@+id/compactcalendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:compactCalendarTargetHeight="250dp"
+                app:compactCalendarTextSize="15dp"
+                app:compactCalendarBackgroundColor="@color/color_background"
+                app:compactCalendarTextColor="@color/colorPrimaryDark"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="@color/color_light"
+                app:compactCalendarCurrentDayBackgroundColor="#B71C1C"
+                android:textAlignment="center"
+                app:compactCalendarOtherMonthDaysTextColor="@color/color_light"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/today"
+                android:padding="15dp"
+                android:background="@color/color_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/today"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                />
+
+
+            <ListView
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="?attr/actionBarSize"
+                android:layout_below="@id/today"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/color_background"
+                android:dividerHeight="10dp"
+                android:divider="@color/color_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/dates"
+                ></ListView>
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/F"
+                app:fabSize="mini"
+                android:src="@drawable/ic_plus"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

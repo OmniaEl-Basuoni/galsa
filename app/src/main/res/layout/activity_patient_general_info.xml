@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<android.support.v7.widget.CardView
+    android:padding="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:weightSum="1"
+    android:background="#fff"
+    android:layout_margin="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.github.pavlospt.roundedletterview.RoundedLetterView
+                android:layout_gravity="center"
+                android:id="@+id/rlv_name_view"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:rlv_titleColor="#fff"
+                app:rlv_backgroundColorValue="@color/colorPrimaryDark"
+                app:rlv_titleSize="18dp"
+                app:rlv_titleText="N"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+            <TextView
+                android:stepSize="0.1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:inputType="textCapWords"
+                android:layout_gravity="center"
+                android:id="@+id/TV_PatientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_name"
+                android:layout_below="@+id/IV"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+
+
+            <TextView
+                android:stepSize="0.1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:inputType="textCapWords"
+                android:layout_gravity="center"
+                android:id="@+id/TV_PatientAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_age"
+                android:layout_below="@+id/IV"
+                android:textAlignment="center"
+
+                />
+
+        <FrameLayout
+            android:stepSize="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <EditText
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:inputType="textCapWords"
+                android:layout_gravity="center"
+                android:id="@+id/et_PatientStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_status"
+                android:layout_below="@+id/IV"
+                android:textAlignment="center"
+                android:enabled="false"
+                />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/edit1"
+                app:fabSize="mini"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/ic_edit"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                />
+        </FrameLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+<android.support.v7.widget.RecyclerView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/RV_galsat" />
+
+
+</LinearLayout>

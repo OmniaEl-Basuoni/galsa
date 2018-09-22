@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+
+
+
+    <!-- Main Content -->
+    <!-- <include layout="@layout/content_main" />
+ -->
+    <!-- Bottom Sheet Content -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottomSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="520dp"
+
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <ScrollView
+            android:background="@color/color_background"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+
+
+
+                <FrameLayout
+                    android:id="@+id/Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/backgroundsolid_blackstroke_15dp"
+                        android:padding="20dp">
+
+
+
+                        <Space
+                            android:id="@+id/ss"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+
+                            <CheckBox
+                                android:checked="true"
+                                android:inputType="textCapWords"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/male"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/RB_Male"
+                                android:textSize="16sp"
+                                android:buttonTint="@color/colorPrimaryDark"
+
+
+                            />
+
+                            <CheckBox
+                                android:inputType="textCapWords"
+                                android:textColor="@color/colorPrimaryDark"
+
+                                android:checked="true"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/female"
+                                android:id="@+id/RB_Female"
+                                android:textSize="16sp"
+                                android:buttonTint="@color/colorPrimaryDark"
+                                />
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+
+                        android:inputType="textCapWords"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender"
+                        android:textSize="20sp"
+                        android:layout_gravity="start|top"
+                        android:layout_marginStart="30dp"
+                        android:background="@color/color_background"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textAlignment="center"
+                        />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/Category"
+                    android:layout_below="@+id/Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/backgroundsolid_blackstroke_15dp"
+                        android:padding="20dp">
+
+
+
+                        <Space
+                            android:id="@+id/Ss"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_category">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category"
+                        android:textColor="@color/colorPrimaryDark"
+
+                        android:textSize="20sp"
+                        android:inputType="textCapWords"
+                        android:layout_gravity="start|top"
+                        android:layout_marginStart="30dp"
+                        android:background="@color/color_background"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textAlignment="center"
+                        />
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/Country"
+                    android:layout_below="@+id/Category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/backgroundsolid_blackstroke_15dp"
+                        android:padding="20dp">
+
+
+
+                        <Space
+                            android:id="@+id/Sss"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_country">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/country"
+                        android:textSize="20sp"
+                        android:inputType="textCapWords"
+                        android:layout_gravity="start|top"
+                        android:layout_marginStart="30dp"
+                        android:background="@color/color_background"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+
+                        />
+
+                </FrameLayout>
+
+                <!--<FrameLayout
+                    android:layout_below="@+id/Country"
+                    android:id="@+id/Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/backgroundsolid_blackstroke_15dp"
+                        android:padding="20dp">
+
+
+
+                        <Space
+                            android:id="@+id/sSs"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+
+                            <CheckBox
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hour"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/RB_Hour"
+                                android:textSize="15dp"
+                                />
+
+                            <CheckBox
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Half an Hour"
+                                android:id="@+id/RB_half_an_hour"
+                                android:textSize="15dp"
+                                />
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Price"
+                        android:textSize="25dp"
+                        android:layout_gravity="start|top"
+                        android:layout_marginStart="30dp"
+                        android:background="@color/color_background"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        />
+
+                </FrameLayout>-->
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom|end"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_filter_outline"
+            android:id="@+id/fab3"
+            app:fabSize="normal"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

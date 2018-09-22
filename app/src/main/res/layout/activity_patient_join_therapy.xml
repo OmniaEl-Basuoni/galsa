@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omnia.ourproject.Patient.Activities.PatientJoinTherapyActivity">
+    >
+
+
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="Today there is no group"
+            android:id="@+id/textWait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/activity_doctor_chat"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+

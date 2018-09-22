@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Do you want to delete it ? "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:layout_margin="10dp"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/question"
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="35dp"
+        >
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+        <Button
+            android:layout_weight="2"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:id="@+id/delete"
+            android:textSize="14dp"
+            android:inputType="textCapWords"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:background="@drawable/lightsolid_withoutstroke_15dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textSize="14dp"
+            android:inputType="textCapWords"
+            android:layout_weight="2"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:id="@+id/cancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancle"
+            android:background="@drawable/lightsolid_withoutstroke_15dp"
+            android:textColor="@color/colorPrimary" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+</RelativeLayout>

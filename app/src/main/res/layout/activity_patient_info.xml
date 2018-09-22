@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:inputType="textCapWords"
+        android:layout_gravity="center"
+        android:id="@+id/TV_GalsaName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/galsa_name"
+        android:layout_below="@+id/IV"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+
+    <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1">
+       <android.support.v7.widget.CardView
+           android:layout_marginStart="5dp"
+           android:layout_marginEnd="5dp"
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:orientation="vertical"
+           app:cardCornerRadius="10dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="1"
+           android:background="#fff"
+           android:layout_weight="1"
+           xmlns:app="http://schemas.android.com/apk/res-auto">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <TextView
+                   android:id="@+id/jj"
+                   android:inputType="textCapWords"
+                   android:textSize="20sp"
+                   android:paddingStart="10dp"
+                   android:layout_width="match_parent"
+                   android:text="@string/notes"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:layout_height="wrap_content" />
+
+
+
+               <TextView
+                   android:padding="5dp"
+                   android:layout_below="@+id/jj"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/LV_Notes"/>
+           </RelativeLayout>
+
+
+       </android.support.v7.widget.CardView>
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="10dp" />
+       <android.support.v7.widget.CardView
+           android:layout_marginStart="5dp"
+           android:layout_marginEnd="5dp"
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:orientation="vertical"
+           app:cardCornerRadius="10dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="1"
+           android:background="#fff"
+           android:layout_weight="1"
+           xmlns:app="http://schemas.android.com/apk/res-auto">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <TextView
+                   android:id="@+id/j"
+                   android:layout_width="match_parent"
+                   android:text="@string/medicine"
+                   android:paddingStart="10dp"
+                   android:inputType="textCapWords"
+                   android:textSize="20sp"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:layout_height="wrap_content" />
+
+
+
+
+               <ListView
+                   android:layout_below="@+id/j"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/LV_medicine"></ListView>
+           </RelativeLayout>
+
+           <android.support.design.widget.FloatingActionButton
+               android:layout_margin="10dp"
+               android:layout_gravity="bottom|end"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               app:backgroundTint="@color/colorPrimaryDark"
+               app:fabSize="normal"/>
+
+       </android.support.v7.widget.CardView>
+   </LinearLayout>
+
+
+
+
+
+</LinearLayout>

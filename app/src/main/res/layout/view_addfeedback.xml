@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp">
+        <EditText
+            android:background="#FFFFFF"
+            android:inputType="textMultiLine"
+            android:textSize="18sp"
+            android:hint="@string/type_a_message"
+            android:id="@+id/ET_Feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <Button
+                android:textSize="14dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/mdtp_white"
+                android:background="@drawable/lightsolid_withoutstroke_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_cancel"
+                android:text="@string/cancel"
+                />
+            <Space
+                android:layout_width="3dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_margin="10dp"
+                android:textColor="@color/mdtp_white"
+                android:background="@drawable/lightsolid_withoutstroke_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:id="@+id/btn_finish"
+                android:text="@string/app_finish"
+                />
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

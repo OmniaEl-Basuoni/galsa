@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.omnia.ourproject">
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1"
+        tools:replace="android:value" />
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/facebook_app_id" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoTitleBar"
+        tools:replace="android:icon">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".SharedActivity.SplashActivity"
+            android:exported="true"
+            android:theme="@style/NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SharedActivity.AppIntoActivity" />
+        <activity android:name=".SharedActivity.LogInActivity" />
+        <activity
+            android:name=".Patient.Activities.PatientHomeActivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SharedActivity.StartActivity" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Doctor.Activities.DoctorProfileActivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Doctor.Activities.DoctorHomeActivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Doctor.Activities.DoctorDashboardActivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Doctor.Activities.DoctorRequestsActivity" />
+        <activity android:name=".Patient.Activities.PatientViewDoctorActivity" />
+        <activity android:name=".Patient.Activities.PatientDashboardActivity" />
+        <activity android:name=".Patient.Activities.PatientJoinTherapyActivity"
+            android:theme="@style/ChatAppTheme"
+            android:label=""/>
+        <activity
+            android:name=".SharedActivity.FeedbackActivity"
+            android:label="Feedback"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Doctor.Activities.DoctorMessageActivity" />
+        <activity android:name=".Patient.Activities.PatientMessageActivity" />
+        <activity
+            android:name=".Doctor.Activities.DoctorChatActivity"
+            android:label=""
+            android:parentActivityName=".Doctor.Activities.DoctorMessageActivity"
+            android:theme="@style/ChatAppTheme" />
+        <activity
+            android:name=".Patient.Activities.PatientChatActivity"
+            android:label=""
+            android:parentActivityName=".Patient.Activities.PatientMessageActivity"
+            android:theme="@style/ChatAppTheme" />
+        <activity android:name=".VideoChat.CallScreenActivity" />
+        <activity
+            android:name=".VideoChat.IncomingCallScreenActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Patient.Activities.PatientHelpActivity" />
+
+        <service android:name=".VideoChat.SinchService" />
+        <service android:name=".Notifications.NotificationServices.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notifications.NotificationServices.MyFirebaseServices">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Patient.Activities.PatientGroupDetailsActivity" />
+        <activity android:name=".Patient.Activities.PatientCalenderActivity" />
+        <activity android:name=".Patient.Activities.PatientGeneralInfo" />
+        <activity android:name=".Patient.Activities.PatientInfoActivity" />
+        <activity android:name=".SharedActivity.RegisterationFragment.RegistrationActivity" />
+        <activity android:name=".Doctor.Activities.DoctorEditActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCPsJ_Pa-2Mwxqn4hLlVR9paKHBYA4dXPY" />
+
+        <activity
+            android:name=".Patient.SearchPackage.TrySearchActivity"
+            android:theme="@style/ActionBarSearch" />
+        <activity
+            android:name=".Patient.SearchPackage.TrySearchTextActivity"
+            android:theme="@style/ActionBarSearch" />
+        <activity android:name=".Patient.Activities.PatientViewYourDoctorActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/my_doctor"/>
+
+        <service android:name=".Alarm.RingtonePlayingService"
+            android:enabled="true"/>
+
+        <receiver
+            android:name=".Alarm.MyAlarm"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

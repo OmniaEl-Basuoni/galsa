@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/root_view"
+    android:orientation="vertical"
+    android:background="@color/colorChat"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omnia.ourproject.Patient.Activities.PatientChatActivity">
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/callButton"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="true"
+        android:text="Stop service"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:background="@color/colorChat"
+        android:layout_weight="1"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_of_message"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/fab"
+        android:dividerHeight="0dp"
+        android:divider="@color/color_background"></ListView>
+
+    <LinearLayout
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/backgrounddark_withoutstroke_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top|start">
+
+
+        <LinearLayout
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:background="@drawable/whitesolid_graystroke_1dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="16sp"
+                    android:id="@+id/Input"
+                    android:hint="Type a message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/emoji_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:src="@drawable/smiley" />
+
+            <Button
+                android:background="@drawable/ic_microphone"
+                android:id="@+id/mic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+
+            <ImageView
+                android:id="@+id/camera_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:src="@drawable/ic_zoom_cam" />
+
+            <ImageView
+                android:id="@+id/gallery_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:src="@drawable/ic_image_gallery" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:maxWidth="40dp"
+                    android:maxHeight="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/fab"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_send"
+                    android:layout_gravity="end"
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

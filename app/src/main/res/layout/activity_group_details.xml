@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical"
+    tools:context=".Patient.Activities.PatientGroupDetailsActivity">
+
+    <TextView
+        android:id="@+id/textView_groupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Group Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:textSize="20dp"
+        android:layout_marginBottom="3dp"/>
+    <TextView
+        android:id="@+id/textView_groupDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:background="@drawable/background"
+        android:textColor="@color/color_background"
+        android:text="mnhyg fdfdc edykkkpol xasderthb lkpo,.m bbdt kiugvdd frdydtf lounvvhgy tyfmmduydwatc kjl hjggjh hfgdsa uytipi kjhkghu khk"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Days"
+            android:textSize="20dp"
+            android:layout_marginBottom="3dp"/>
+        <TextView
+            android:id="@+id/textView_groupDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:background="@drawable/background"
+            android:textColor="@color/color_background"
+            android:text="Saterday - Fryday"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time"
+            android:textSize="20dp"
+            android:layout_marginBottom="3dp"/>
+        <TextView
+            android:id="@+id/textView_groupTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:background="@drawable/background"
+            android:textColor="@color/color_background"
+            android:text="From 7 pm To 9 pm"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Limitation"
+            android:textSize="20dp"
+            android:layout_marginBottom="3dp"/>
+        <TextView
+            android:id="@+id/textView_groupCapicity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:background="@drawable/background"
+            android:textColor="@color/color_background"
+            android:text="The capacity is 10 members"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Recently "
+            android:textSize="20dp"
+            android:layout_marginBottom="3dp"/>
+        <TextView
+            android:id="@+id/textView_groupMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:background="@drawable/background"
+            android:textColor="@color/color_background"
+            android:text="Number of members is 7 members"/>
+    </LinearLayout>
+
+    <Button
+        android:text="@string/join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_Join"
+        android:layout_margin="10dp"
+        android:textSize="14dp"
+        android:textColor="@color/mdtp_white"
+        android:background="@drawable/lightsolid_withoutstroke_15dp"
+        android:layout_gravity="center|bottom"
+        />
+
+</LinearLayout>
